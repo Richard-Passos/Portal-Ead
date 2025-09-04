@@ -4,13 +4,13 @@
 
 ## 🚀 Run project
 
-Visit the live [website](https://portalead.vercel.app)
+Visit the live [website](https://fe-portal-ead.vercel.app)
 
 <br>
 
 ## 📝 Description
 
-Where my professional expertise meets my personal passions. Come on in and take a look around! Explore captivating content that offers a quick look into my journey, interests, and creations. From work samples to personal insights, this portfolio is a window into who I am and what I do. Whether you're here to discover, connect, or collaborate, I invite you to explore and enjoy!
+Portal-EAD is a web portal developed for a web developer selection process at SEAD/UFRGS. The project demonstrates proficiency in HTML, CSS, JavaScript, and Bootstrap, with additional functionality implemented using TypeScript for strong typing and safe DOM manipulation.
 
 <br/>
 
@@ -18,13 +18,10 @@ Where my professional expertise meets my personal passions. Come on in and take 
 
 Explore website's functionalities:
 
-- `Home Page`: Gives a peek into both my professional and personal sides with awesome descriptions and an amazing CTA.
-- `Work Page`: Talks about what I do, why I do it, and some examples of my work, skills and values.
-- `About Page`: Shares a bit about who I am, what I like to do, and where I'm coming from.
-- `Projects Page`: Shows off my projects with pagination.
-- `Contact Page`: Lets you get in touch with me easily.
-- `Error Page`: Helps you get back on track if you run into any issues while browsing.
-- `Not Found Page`: Friendly page to help you if you end up somewhere that doesn't exist.
+- `Home Page`: Showcasing the course and purpose of the portal.
+- `materials Section`: With PDF, video, and audio resources.
+- `team Section`: Introducing tutors, professors, and assistants.
+- `Contact Section`: Allowing users to send messages via a dynamic form.
 
 <br/>
 
@@ -32,10 +29,11 @@ Explore website's functionalities:
 
 Cutting-edge technologies to ensure an great experience:
 
-- `Next.js`
-- `Next-intl`
-- `TailwindCSS`
-- `JavaScript`
+- `Typescript`
+- `Bootstrap`
+- `Javascript`
+- `HTML`
+- `css`
 
 <br>
 
