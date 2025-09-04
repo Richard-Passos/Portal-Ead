@@ -34,7 +34,7 @@
           LOGO
         </a>
 
-        <nav class="nav nav-pills" aria-label="Seções">
+        <nav class="nav nav-pills d-none d-md-flex" aria-label="Seções">
           <a href="/" class="nav-item nav-link">Início</a>
 
           <a href="#materials" class="nav-item nav-link">Materiais</a>
@@ -125,7 +125,7 @@
 
         <ul
           id="team_list"
-          class="row py-5 list-unstyled row-cols-1 row-cols-lg-4"
+          class="row flex-column flex-lg-row gap-2 py-5 list-unstyled"
         >
           <!-- Content will be dynamically generate using JS -->
         </ul>
@@ -133,7 +133,7 @@
 
       <section id="contact" class="container col-xxl-8 px-4 py-5">
         <div class="row flex-column flex-lg-row align-items-center">
-          <div class="col-6">
+          <div class="col-lg-6">
             <h2>Contate-nos</h2>
 
             <p class="col-8">
@@ -142,7 +142,7 @@
             </p>
           </div>
 
-          <form id="contact_form" class="col-10 col-sm-8 col-lg-6">
+          <form id="contact_form" class="col-sm-8 col-lg-6">
             <div class="mb-3">
               <label for="name" class="form-label">Nome</label>
 
@@ -218,7 +218,10 @@
           LOGO
         </a>
 
-        <nav aria-label="Seções" class="nav col-md-4 justify-content-end">
+        <nav
+          aria-label="Seções"
+          class="nav col-md-4 justify-content-end d-none d-xl-flex"
+        >
           <a
             href="#"
             class="nav-item nav-link text-body-secondary"

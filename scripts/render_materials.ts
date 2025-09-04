@@ -62,6 +62,7 @@ const render_materials = () => {
   MATERIALS.forEach((m) => {
     const wrapper = document.createElement('li');
     wrapper.dataset.materialType = m.type.id;
+    wrapper.style.minHeight = '250px';
 
     const card = document.createElement('a');
     card.className =
@@ -76,7 +77,7 @@ const render_materials = () => {
 
     const title = document.createElement('h3');
     title.className =
-      'display-6 pt-5 ps-5 pe-5 pb-4 mt-5 text-white lh-1 fw-bold';
+      'display-6 pt-5 ps-5 pe-5 pb-4 mt-auto text-white lh-1 fw-bold';
     title.textContent = m.title;
 
     card.appendChild(badge);

@@ -37,7 +37,7 @@ var team_list = document.getElementById('team_list');
 var render_team = function () {
     TEAM.forEach(function (t) {
         var wrapper = document.createElement('li');
-        wrapper.className = 'col';
+        wrapper.className = 'col w-100 w-md-50';
         var card = document.createElement('div');
         card.className = 'card p-3 d-flex flex-column align-items-center';
         var img_wrapper = document.createElement('div');

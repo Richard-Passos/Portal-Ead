@@ -38,7 +38,7 @@ const team_list = document.getElementById('team_list');
 const render_team = () => {
   TEAM.forEach((t) => {
     const wrapper = document.createElement('li');
-    wrapper.className = 'col';
+    wrapper.className = 'col w-100 w-md-50';
 
     const card = document.createElement('div');
     card.className = 'card p-3 d-flex flex-column align-items-center';

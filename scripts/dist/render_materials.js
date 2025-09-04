@@ -61,6 +61,7 @@ var render_materials = function () {
     MATERIALS.forEach(function (m) {
         var wrapper = document.createElement('li');
         wrapper.dataset.materialType = m.type.id;
+        wrapper.style.minHeight = '250px';
         var card = document.createElement('a');
         card.className =
             'card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 text-decoration-none';
@@ -72,7 +73,7 @@ var render_materials = function () {
         badge.textContent = m.type.label;
         var title = document.createElement('h3');
         title.className =
-            'display-6 pt-5 ps-5 pe-5 pb-4 mt-5 text-white lh-1 fw-bold';
+            'display-6 pt-5 ps-5 pe-5 pb-4 mt-auto text-white lh-1 fw-bold';
         title.textContent = m.title;
         card.appendChild(badge);
         card.appendChild(title);
