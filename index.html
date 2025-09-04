@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="m-0">
+  <head>
+    <title>Title</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <header class="bg-body-tertiary pb-4">
+      <div
+        class="container d-flex flex-wrap justify-content-center py-3 border-bottom"
+      >
+        <a
+          href="/"
+          class="d-flex fs-4 fw-bold align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none"
+        >
+          LOGO
+        </a>
+
+        <nav class="nav nav-pills" aria-label="Seções">
+          <a href="/" class="nav-item nav-link">Início</a>
+
+          <a href="#materials" class="nav-item nav-link">Materiais</a>
+
+          <a href="#team" class="nav-item nav-link">Equipe</a>
+
+          <a href="#contact" class="nav-link">Contato</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section id="hero" class="container col-xxl-8 px-4 py-5">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+          <div class="col-10 col-sm-8 col-lg-6">
+            <img
+              src="/assets/imgs/hero.png"
+              class="d-block img-fluid"
+              alt="Ilustração minimalista mostrando um laptop com símbolo de check, uma pessoa estilizada interagindo, um balão de fala, um ícone de Wi-Fi e um mouse, representando inclusão digital."
+              width="700"
+              height="500"
+              loading="lazy"
+            />
+          </div>
+
+          <div class="col-lg-6">
+            <h1 class="display-5 fw-bold lh-1 mb-3">
+              Curso de Inclusão digital UFRGS
+            </h1>
+
+            <p class="lead">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis,
+              ipsam doloribus! Ipsa eum sapiente mollitia ipsam quaerat
+              asperiores!
+            </p>
+
+            <div class="d-grid gap-2 pt-3 d-md-flex justify-content-md-start">
+              <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">
+                Botão 1
+              </button>
+
+              <button
+                type="button"
+                class="btn btn-outline-secondary btn-lg px-4"
+              >
+                Botão 2
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="materials" class="container px-4 py-5">
+        <h2>Materiais</h2>
+
+        <div id="material_filters_wrapper" class="row g-2 mt-3">
+          <!-- Filters will be dynamically generate using JS -->
+        </div>
+
+        <ul
+          id="material_list"
+          class="row row-cols-1 row-cols-lg-3 list-unstyled flex-wrap align-items-stretch g-4 py-5"
+        >
+          <!-- Content will be dynamically generate using JS -->
+
+          <div class="col order-last">
+            <button
+              class="btn w-100 card h-100 border justify-content-center align-items-center rounded-5"
+            >
+              <svg
+                width="48"
+                height="48"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M19.75 12a.75.75 0 0 1-.75.75h-6.25V19a.75.75 0 0 1-1.5 0v-6.25H5a.75.75 0 0 1 0-1.5h6.25V5a.75.75 0 0 1 1.5 0v6.25H19a.75.75 0 0 1 .75.75Z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+        </ul>
+      </section>
+
+      <section id="team" class="container px-4 py-5">
+        <h2 class="pb-2 border-bottom">Equipe</h2>
+
+        <ul
+          id="team_list"
+          class="row py-5 list-unstyled row-cols-1 row-cols-lg-4"
+        >
+          <!-- Content will be dynamically generate using JS -->
+        </ul>
+      </section>
+
+      <section id="contact" class="container col-xxl-8 px-4 py-5">
+        <div class="row flex-column flex-lg-row align-items-center">
+          <div class="col-6">
+            <h2>Contate-nos</h2>
+
+            <p class="col-8">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla,
+              modi!
+            </p>
+          </div>
+
+          <form id="contact_form" class="col-10 col-sm-8 col-lg-6">
+            <div class="mb-3">
+              <label for="name" class="form-label">Nome</label>
+
+              <input
+                type="text"
+                class="form-control"
+                id="name"
+                required
+                placeholder="João"
+              />
+            </div>
+
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                aria-describedby="emailHelp"
+                placeholder="joão@exemplo.com"
+                required
+              />
+
+              <div id="emailHelp" class="form-text">
+                Seu email, para que possamos responder.
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label for="message" class="form-label">Menssagem</label>
+
+              <textarea
+                class="form-control"
+                id="message"
+                required
+                placeholder="Eu queria saber mais sobre..."
+                minlength="2"
+                maxlength="300"
+              ></textarea>
+            </div>
+
+            <div class="mb-3 form-check">
+              <input
+                type="checkbox"
+                class="form-check-input"
+                id="exampleCheck1"
+                required
+              />
+
+              <label class="form-check-label" for="exampleCheck1">
+                Aceito os termos de uso
+              </label>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-body-tertiary py-3">
+      <div
+        class="d-flex container flex-wrap justify-content-between align-items-center py-3 my-4 border-top"
+      >
+        <p class="col-md-4 mb-0 text-body-secondary">© 2025 Company, Inc</p>
+
+        <a
+          href="/"
+          class="col-md-4 d-flex fs-4 fw-bold align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
+          aria-label="Bootstrap"
+        >
+          LOGO
+        </a>
+
+        <nav aria-label="Seções" class="nav col-md-4 justify-content-end">
+          <a
+            href="#"
+            class="nav-item nav-link text-body-secondary"
+            aria-current="page"
+          >
+            Início
+          </a>
+
+          <a href="#materials" class="nav-item nav-link text-body-secondary">
+            Materiais
+          </a>
+
+          <a href="#team" class="nav-item nav-link text-body-secondary">
+            Equipe
+          </a>
+
+          <a href="#contact" class="nav-link text-body-secondary">Contato</a>
+        </nav>
+      </div>
+    </footer>
+
+    <!-- Toaster -->
+    <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+      <div
+        id="contact_toast"
+        class="toast bg-success text-success-emphasis"
+        role="alert"
+        aria-live="assertive"
+        aria-atomic="true"
+      >
+        <div class="toast-header">
+          <strong class="me-auto">Mensagem</strong>
+
+          <small>Agora</small>
+
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="toast"
+            aria-label="Fechar"
+          ></button>
+        </div>
+
+        <div class="toast-body">Menssagem enviada com sucesso!</div>
+      </div>
+
+      <div
+        id="error_toast"
+        class="toast bg-danger text-danger-emphasis"
+        role="alert"
+        aria-live="assertive"
+        aria-atomic="true"
+      >
+        <div class="toast-header">
+          <strong class="me-auto">Erro</strong>
+
+          <small>Agora</small>
+
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="toast"
+            aria-label="Fechar"
+          ></button>
+        </div>
+
+        <div class="toast-body">Todos os campos devem ser preenchidos.</div>
+      </div>
+    </div>
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- App JS -->
+    <script src="/scripts/dist/render_material_filters.js"></script>
+
+    <script src="/scripts/dist/render_materials.js"></script>
+
+    <script src="/scripts/dist/render_team.js"></script>
+
+    <script src="/scripts/dist/form.js"></script>
+  </body>
+</html>

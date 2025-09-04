@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "target": "ES5",
+    "module": "ESNext",
+    "strict": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "outDir": "scripts/dist",
+    "rootDir": "scripts",
+    "skipLibCheck": true
+  },
+  "exclude": ["node_modules"]
+}
